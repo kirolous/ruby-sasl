@@ -6,8 +6,8 @@ Gem::Specification.new do |s|
   s.date = '2010-10-18'
   s.description = 'Simple Authentication and Security Layer (RFC 4422)'
   s.email = 'pyu@intridea.com'
- gem.files         = `git ls-files`.split("\n")
- gem.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
+ s.files = Dir['lib/   *.rb'] + Dir['bin/*']
+s.files += Dir['[A-Z]*'] + Dir['test/**/*']
   s.has_rdoc = false
   s.homepage = 'http://github.com/luizluca/ruby-sasl/'
   s.require_paths = ["lib"]
