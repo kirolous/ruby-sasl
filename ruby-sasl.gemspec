@@ -1,8 +1,8 @@
 Gem::Specification.new do |s|
-  s.name = 'ruby-sasl'
+  s.name = 'kiro-ruby-sasl'
   s.version = '0.0.4.0'
 
-  s.authors = ['Stephan Maka', 'Ping Yu', 'Luiz Angelo Daros de Luca']
+  s.authors = ['Stephan Maka', 'Ping Yu', 'Kirolous Frouk']
   s.date = '2010-10-18'
   s.description = 'Simple Authentication and Security Layer (RFC 4422)'
   s.email = 'pyu@intridea.com'
