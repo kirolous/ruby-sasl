@@ -6,8 +6,21 @@ Gem::Specification.new do |s|
   s.date = '2010-10-18'
   s.description = 'Simple Authentication and Security Layer (RFC 4422)'
   s.email = 'pyu@intridea.com'
- s.files = Dir['lib/   *.rb'] + Dir['bin/*']
-s.files += Dir['[A-Z]*'] + Dir['test/**/*']
+  s.test_files = %w(spec/mechanism_spec.rb
+                    spec/anonymous_spec.rb
+                    spec/plain_spec.rb
+                    spec/digest_md5_spec.rb
+                    spec/socket_spec.rb)
+  s.files = s.test_files + %w(lib/sasl/base.rb
+                              lib/sasl/digest_md5.rb
+                              lib/sasl/gssapi.rb
+                              lib/sasl/gssspnego.rb
+                              lib/sasl/anonymous.rb
+                              lib/sasl/plain.rb
+                              lib/sasl/base64.rb
+                              lib/sasl/socket.rb
+                              lib/sasl.rb
+                              README.markdown)
   s.has_rdoc = false
   s.homepage = 'http://github.com/luizluca/ruby-sasl/'
   s.require_paths = ["lib"]
