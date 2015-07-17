@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'kiro-ruby-sasl'
-  s.version = '0.0.4.1'
+  s.version = '0.0.4.2'
 
   s.authors = ['Stephan Maka', 'Ping Yu', 'Kirolous Frouk']
   s.date = '2010-10-18'
